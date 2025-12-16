@@ -3,7 +3,8 @@
 
 FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019
 ARG source
-ENV password="karelbarel"
+ENV user="karel"
+ENV password="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"
 WORKDIR /inetpub/wwwroot
 COPY ${source:-obj/Docker/publish} .
 
